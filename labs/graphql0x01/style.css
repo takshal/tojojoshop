@@ -1,0 +1,14 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="text"], input[type="submit"] {
+    margin-bottom: 10px;
+}
+
+#books-list {
+    margin-top: 20px;
+}

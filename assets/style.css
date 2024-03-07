@@ -1,0 +1,41 @@
+
+
+        body{
+            background-color: #f8f9fa;
+        }
+        /* Custom styles for dark card */
+        .dark-card {
+            
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .dark-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+   .no-margin {
+    margin: 0 !important;
+}
+
+.sushi-red {
+    background-color: #e4553f !important;
+}
+
+/* a {
+    color: #ED2257 !important;
+} */
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.h1-index {
+    /*text-align: center;*/
+    margin-top: 1em;
+}
+
