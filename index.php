@@ -14,7 +14,7 @@
                     <h2 class="d-inline">tojojo's Bug Bounty Labs</h2>
                 </div>
                 <div class="col text-end">
-                    <a href="/capstone/index.php" class="btn btn-outline-secondary me-2" data-bs-toggle="modal"
+                    <a href="index.php" class="btn btn-outline-secondary me-2" data-bs-toggle="modal"
                         data-bs-target="#instructionsModal">Instructions</a>
                 </div>
             </div>
@@ -24,6 +24,7 @@
 
     <div class="container mt-5">
         <div class="row">
+             <a href="init.php" class="btn btn-success me-2"  >init datbase</a>
             <div class="col">
             <!-- <h2 >Sql Injection Attacks </h2> -->
                 <h2 class="h1-index"> XSS Injection Attacks</h2> 
