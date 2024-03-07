@@ -53,7 +53,7 @@ if ($conn->query($createTable) === TRUE && $conn->query($insert)) {
 }
 
 ############################################################################
-$dropTable = "DROP TABLE IF EXISTS at0x02";
+$dropTable = "DROP TABLE IF EXISTS auth0x02";
 
 if ($conn->query($dropTable) === TRUE) {
     echo "Table at0x01 dropped successfully\n";
@@ -243,6 +243,32 @@ if ($conn->query($createTable) === TRUE && $conn->query($insert)) {
 
 ############################################################
 
+
+
+$dropTable = "DROP TABLE IF EXISTS csrf0x02";
+
+if ($conn->query($dropTable) === TRUE) {
+    echo "Table csrf0x03 dropped successfully\n";
+} else {
+    echo "Error dropping table: " . $conn->error . "\n";
+}
+$createTable = "CREATE TABLE `csrf0x02` (
+  `username` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `csrftoken` varchar(30) DEFAULT NULL
+)";
+
+$insert = "INSERT INTO `csrf0x02` (`username`, `email`, `csrftoken`) VALUES
+('tojojo', 'tojojo@gmail.com', NULL),
+('dhakkan', 'dhakkan@gmail.com', NULL)";
+
+if ($conn->query($createTable) === TRUE && $conn->query($insert)) {
+    echo "Table csrf0x03 created successfully\n";
+} else {
+    echo "Error creating table: " . $conn->error . "\n";
+}
+
+############################################
 $dropTable = "DROP TABLE IF EXISTS csrf0x03";
 
 if ($conn->query($dropTable) === TRUE) {
