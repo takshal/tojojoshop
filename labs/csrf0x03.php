@@ -19,7 +19,7 @@ if (isset($_COOKIE["csrf0x02"])) {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $email = $row["email"];
-        print_r($email);
+        // print_r($email);
     }
     $stmt->close();
 }
